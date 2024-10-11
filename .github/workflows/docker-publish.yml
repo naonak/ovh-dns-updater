@@ -4,13 +4,13 @@ on:
   # Schedule a daily build at 4 AM UTC
   schedule:
     - cron: '0 4 * * *'
-  # Trigger on pushes to the master branch and version tags
+  # Trigger on pushes to the main branch and version tags
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     tags: [ 'v*.*.*' ]
   # Trigger on pull requests to the master branch
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 env:
   # Define the Docker registry, defaulting to Docker Hub
