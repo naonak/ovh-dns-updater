@@ -130,7 +130,7 @@ You can use Docker to run the script easily. Here's a sample `docker-compose.yml
 version: '3'
 services:
   ovh-dns-updater:
-    image: ghcr.io/naonak/ovh-dns-updater:master
+    image: ghcr.io/naonak/ovh-dns-updater:latest
     environment:
       OVH_APP_KEY: 'your-app-key'
       OVH_APP_SECRET: 'your-app-secret'
